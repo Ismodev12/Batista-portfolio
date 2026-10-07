@@ -7,7 +7,7 @@ import { Spark } from "./ui.jsx";
    Au clic : les deux pans s'écartent, puis les éléments de la Hero se placent un à un
    (l'ordre est donné par la prop `delay` des <Reveal> dans Hero.jsx). */
 const folds =
-  "bg-[repeating-linear-gradient(90deg,#7c2c0b_0,#d9531a_2.2%,#ff6b2c_4.4%,#c2440f_6.6%,#7c2c0b_8.8%)]";
+  "bg-[repeating-linear-gradient(90deg,#2c5208_0,#6cc21e_2.2%,#9cff3d_4.4%,#5fae18_6.6%,#2c5208_8.8%)]";
 const shade = "absolute inset-0 bg-gradient-to-b from-ink/55 via-transparent to-ink/70";
 
 export default function Curtain() {

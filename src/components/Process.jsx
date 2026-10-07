@@ -21,7 +21,7 @@ export default function Process() {
       <ol className="mt-14 grid gap-5 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
         {process.map((s, i) => (
           <Reveal as="li" key={s.n} delay={i * 110} className={offset[i]}>
-            <div tabIndex={0} className="group relative flex h-full min-h-[19rem] flex-col justify-between overflow-hidden rounded-[2rem] border border-bone/15 bg-bone/[0.05] p-7 transition-[transform,color,border-color,box-shadow] duration-500 ease-[cubic-bezier(.2,.7,.2,1)] hover:-translate-y-2 hover:border-accent hover:text-ink hover:shadow-[0_30px_60px_-25px_rgba(255,107,44,.6)] focus-visible:text-ink sm:p-8">
+            <div tabIndex={0} className="group relative flex h-full min-h-[19rem] flex-col justify-between overflow-hidden rounded-[2rem] border border-bone/15 bg-bone/[0.05] p-7 transition-[transform,color,border-color,box-shadow] duration-500 ease-[cubic-bezier(.2,.7,.2,1)] hover:-translate-y-2 hover:border-accent hover:text-ink hover:shadow-[0_30px_60px_-25px_rgba(156,255,61,.6)] focus-visible:text-ink sm:p-8">
               <span aria-hidden="true" className="absolute inset-0 bg-accent transition-[clip-path] duration-700 ease-[cubic-bezier(.2,.7,.2,1)] [clip-path:circle(0%_at_0%_100%)] group-hover:[clip-path:circle(150%_at_0%_100%)] group-focus-visible:[clip-path:circle(150%_at_0%_100%)]" />
               {/* Grand numéro en contour */}
               <span aria-hidden="true" className="pointer-events-none absolute -right-2 -top-6 font-display text-[9rem] font-bold leading-none tracking-[-0.06em] text-transparent transition-all duration-700 [-webkit-text-stroke:1.5px_rgba(245,245,239,.16)] group-hover:-translate-x-2 group-hover:translate-y-2 group-hover:[-webkit-text-stroke:1.5px_rgba(9,9,9,.3)]">{s.n}</span>

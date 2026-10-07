@@ -6,10 +6,10 @@ export default {
       // Palette : noir, blanc cassé et UNE couleur d'accent.
       // Pour changer la couleur du site, modifiez simplement "accent" ci-dessous.
       colors: {
-        ink: "#090909", bone: "#F5F5EF", accent: "#FF6B2C",
-        // Couleurs de texte secondaires, en gris chauds accordés à l'accent.
-        mist: { DEFAULT: "#D3CCC2", dim: "#9E968B" },   // sur fond noir : texte courant / discret
-        moss: { DEFAULT: "#33291F", dim: "#675C50" },   // sur fond clair : texte courant / discret
+        ink: "#090909", bone: "#F5F5EF", accent: "#9CFF3D",
+        // Couleurs de texte secondaires, teintées vers le vert pour s'accorder à l'accent.
+        mist: { DEFAULT: "#C9D1BC", dim: "#959E88" },   // sur fond noir : texte courant / discret
+        moss: { DEFAULT: "#2B3421", dim: "#56604A" },   // sur fond clair : texte courant / discret
       },
       fontFamily: {
         display: ['"Space Grotesk Variable"', "Space Grotesk", "system-ui", "sans-serif"],

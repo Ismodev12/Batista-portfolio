@@ -16,7 +16,7 @@ export default function Marquee() {
   );
   return (
     <div className="overflow-hidden py-10 sm:py-14">
-      <div className="-mx-6 -rotate-2 bg-accent py-5 text-ink shadow-[0_10px_40px_-10px_rgba(255,107,44,.5)] sm:py-8">
+      <div className="-mx-6 -rotate-2 bg-accent py-5 text-ink shadow-[0_10px_40px_-10px_rgba(156,255,61,.5)] sm:py-8">
         <div className="flex w-max animate-marquee">{row(false)}{row(true)}</div>
       </div>
     </div>
