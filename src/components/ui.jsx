@@ -56,13 +56,14 @@ export function Arrow({ className = "h-5 w-5" }) {
   );
 }
 
-/** Étoile décorative à 8 branches. */
+/** Élément décoratif du site : fleur géométrique à quatre pétales ronds. */
 export function Spark({ className = "" }) {
   return (
     <svg viewBox="0 0 100 100" className={className} aria-hidden="true" fill="currentColor">
-      {[0, 22.5, 45, 67.5, 90, 112.5, 135, 157.5].map((r) => (
-        <rect key={r} x="47" y="2" width="6" height="96" rx="3" transform={`rotate(${r} 50 50)`} />
-      ))}
+      <circle cx="50" cy="26" r="26" />
+      <circle cx="74" cy="50" r="26" />
+      <circle cx="50" cy="74" r="26" />
+      <circle cx="26" cy="50" r="26" />
     </svg>
   );
 }
