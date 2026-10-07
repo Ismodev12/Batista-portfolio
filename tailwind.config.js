@@ -4,12 +4,13 @@ export default {
   theme: {
     extend: {
       // Palette : noir, blanc cassé et UNE couleur d'accent.
-      // Pour changer la couleur du site, modifiez simplement "accent" ci-dessous.
+      // Les valeurs sont définies en haut de src/index.css.
       colors: {
-        ink: "#090909", bone: "#F5F5EF", accent: "#9CFF3D",
-        // Couleurs de texte secondaires, teintées vers le vert pour s'accorder à l'accent.
-        mist: { DEFAULT: "#C9D1BC", dim: "#959E88" },   // sur fond noir : texte courant / discret
-        moss: { DEFAULT: "#2B3421", dim: "#56604A" },   // sur fond clair : texte courant / discret
+        ink: "rgb(var(--c-ink) / <alpha-value>)",
+        bone: "rgb(var(--c-bone) / <alpha-value>)",
+        accent: "rgb(var(--c-accent) / <alpha-value>)",
+        mist: { DEFAULT: "rgb(var(--c-mist) / <alpha-value>)", dim: "rgb(var(--c-mist-dim) / <alpha-value>)" },   // texte courant / discret sur fond « ink »
+        moss: { DEFAULT: "rgb(var(--c-moss) / <alpha-value>)", dim: "rgb(var(--c-moss-dim) / <alpha-value>)" },   // texte courant / discret sur fond « bone »
       },
       fontFamily: {
         display: ['"Space Grotesk Variable"', "Space Grotesk", "system-ui", "sans-serif"],

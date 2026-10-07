@@ -69,7 +69,8 @@ export default function ProjectCard({ project: p }) {
   if (p.layout === "full") return (
     <Reveal as="article">
       <a href={p.link} className="group block">
-        <Shot src={p.image} alt={alt} className="aspect-[4/3] rounded-panel sm:aspect-[16/10] lg:aspect-[16/7]">
+        {/* theme-dark : le texte posé sur la photo reste clair dans les deux thèmes */}
+        <Shot src={p.image} alt={alt} className="theme-dark aspect-[4/3] rounded-panel text-bone sm:aspect-[16/10] lg:aspect-[16/7]">
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/10 to-transparent transition-opacity duration-700 group-hover:opacity-80" />
           <span className="absolute left-6 top-6 rounded-full bg-accent px-5 py-2 font-display text-sm font-medium text-ink transition-transform duration-500 group-hover:-translate-y-1 sm:left-10 sm:top-10">{p.n} — {p.type}</span>
           <div className="absolute inset-x-6 bottom-6 flex flex-wrap items-end justify-between gap-6 sm:inset-x-10 sm:bottom-10">

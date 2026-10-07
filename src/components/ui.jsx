@@ -29,7 +29,7 @@ export function Media({ src, alt, className = "", imgClassName = "", eager = fal
   return (
     <div className={`relative overflow-hidden bg-bone/10 ${className}`}>
       {missing ? (
-        <div className="absolute inset-0 grid place-items-center p-6 text-center bg-[repeating-linear-gradient(135deg,rgba(245,245,239,.06)_0_2px,transparent_2px_18px)]">
+        <div className="absolute inset-0 grid place-items-center p-6 text-center bg-[repeating-linear-gradient(135deg,rgb(var(--c-bone)/.06)_0_2px,transparent_2px_18px)]">
           <p className="eyebrow !tracking-[0.12em] text-mist-dim break-all">Image à placer<br />public{src}</p>
         </div>
       ) : (

@@ -1,0 +1,8 @@
+Photos de l'équipe
+------------------
+Déposez ici une photo par personne (format portrait conseillé, 4:5, au moins 600 x 750 px),
+puis indiquez son nom de fichier dans src/data/team.js (champ "photo").
+Exemple : public/assets/images/team/awa.jpg  ->  photo: "/assets/images/team/awa.jpg"
+Tant qu'une photo manque, la carte affiche les initiales de la personne.
+
+Fichiers attendus actuellement : lisette.jpg, bhilal.jpg, ismael.jpg, elvire.jpg, eurydoxie.jpg

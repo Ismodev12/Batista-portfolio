@@ -5,6 +5,10 @@ export const site = {
   email: "batista.segla@example.com",
   linkedin: "https://www.linkedin.com/",
   github: "https://github.com/",
+  // Notification par e-mail à chaque nouveau visiteur (une seule fois par personne).
+  // 1. Créez une clé gratuite sur https://web3forms.com avec l'adresse qui doit recevoir les alertes.
+  // 2. Collez-la ci-dessous. Clé vide = notifications désactivées.
+  visitNotification: { accessKey: "" },
   images: {
     // Portrait détouré (fond transparent : PNG ou WebP).
     hero: "/assets/images/hero/batista-hero.webp",
@@ -27,11 +31,10 @@ export const stats = [
 ];
 
 export const aboutFacts = [
-  { label: "Basée en", value: "Afrique de l’Ouest", icon: "/assets/icons/location.svg" },
-  { label: "Rôle", value: "Développeuse web junior", icon: "/assets/icons/role.svg" },
-  { label: "Spécialité", value: "Frontend & Full-stack", icon: "/assets/icons/focus.svg" },
-  // `tags` : la valeur est affichée sous forme de pastilles.
-  { label: "Approche", tags: ["Simple", "Utile", "Élégant"], icon: "/assets/icons/approach.svg" },
+  { label: "Basée en", value: "Afrique de l’Ouest" },
+  { label: "Rôle", value: "Développeuse web junior" },
+  { label: "Spécialité", value: "Frontend & Full-stack" },
+  { label: "Approche", value: "Simple · Utile · Élégant" },
 ];
 
 export const process = [

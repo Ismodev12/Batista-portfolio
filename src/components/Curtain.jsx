@@ -38,7 +38,7 @@ export default function Curtain() {
   return (
     <button
       type="button" onClick={open} autoFocus aria-label="Lever le rideau et entrer sur le site"
-      className={`fixed inset-0 z-[100] block w-full cursor-pointer overflow-hidden text-bone ${opening ? "pointer-events-none" : ""}`}
+      className={`theme-dark fixed inset-0 z-[100] block w-full cursor-pointer overflow-hidden text-bone ${opening ? "pointer-events-none" : ""}`}
     >
       {/* Les deux pans du rideau */}
       <span className={`${pan} left-0 origin-top-left ${folds} ${opening ? "-translate-x-[104%] skew-x-6" : ""}`}><span className={shade} /></span>

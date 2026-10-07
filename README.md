@@ -19,6 +19,7 @@ Si les photos n'ont pas été téléchargées (pas de connexion) : `npm run imag
 | Nom, e-mail, liens, stats, about, process | `src/data/site.js` |
 | Projets (textes, image, lien, composition) | `src/data/projects.js` |
 | Compétences et icônes | `src/data/skills.js` |
+| Équipe (noms, postes, photos) | `src/data/team.js` + `public/assets/images/team/` |
 | Couleurs (3) et typographie | `tailwind.config.js` |
 
 ## Images

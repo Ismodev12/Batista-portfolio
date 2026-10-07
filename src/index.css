@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* COULEURS DU SITE (valeurs R V B) — modifiez-les ici pour changer tout le site. */
+:root, .theme-dark {
+  --c-ink: 9 9 9;            /* fond de page */
+  --c-bone: 245 245 239;     /* panneaux et texte principal */
+  --c-accent: 156 255 61;    /* vert lime */
+  --c-mist: 201 209 188;  --c-mist-dim: 149 158 136;
+  --c-moss: 43 52 33;     --c-moss-dim: 86 96 74;
+}
+
 @layer base {
   /* Échelle globale : augmentez ces valeurs pour agrandir tout le site. */
   html { scroll-behavior: smooth; scroll-padding-top: 6rem; font-size: 15px; }
