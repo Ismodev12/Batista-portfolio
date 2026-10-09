@@ -64,7 +64,7 @@ export default function ContactForm() {
 
       <div className="mt-10 flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
         <p className="max-w-xs text-sm text-mist-dim" aria-live="polite">
-          {sent ? "Votre messagerie s’ouvre avec le message prêt à envoyer. Merci !" : "Réponse sous 48 h, promis."}
+          {sent ? "Votre messagerie s’ouvre avec le message prêt à envoyer. Merci !" : "Réponse sous 48 h."}
         </p>
         <button type="submit" className="btn group bg-accent !py-3 !pl-8 !pr-3 text-ink hover:bg-bone">
           Envoyer le message

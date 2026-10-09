@@ -15,7 +15,7 @@ export default function Contact() {
           <div className="mt-14 grid items-start gap-12 lg:mt-16 lg:grid-cols-12">
             <Reveal className="lg:col-span-5">
               <p className="text-xl leading-relaxed text-moss sm:text-2xl">
-                Je suis ouverte aux projets freelance, collaborations et opportunités pour continuer à évoluer dans le développement web.
+                Un site à créer, à refaire, ou juste une idée ? Décrivez-moi votre projet : je vous réponds avec mes questions, des pistes concrètes et un devis gratuit. Je reste aussi ouverte aux collaborations et aux opportunités.
               </p>
               <ul className="mt-10 flex flex-wrap gap-x-8 gap-y-3 font-display text-lg font-medium">
                 <li><a className="link-line break-all" href={`mailto:${site.email}`}>{site.email}</a></li>

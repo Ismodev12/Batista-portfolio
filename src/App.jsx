@@ -6,10 +6,14 @@ import Hero from "./components/Hero.jsx";
 import Stats from "./components/Stats.jsx";
 import About from "./components/About.jsx";
 import Marquee from "./components/Marquee.jsx";
+import WhyMe from "./components/WhyMe.jsx";
 import Skills from "./components/Skills.jsx";
 import Projects from "./components/Projects.jsx";
 import Process from "./components/Process.jsx";
 import Team from "./components/Team.jsx";
+import Problem from "./components/Problem.jsx";
+import Faq from "./components/Faq.jsx";
+import Offer from "./components/Offer.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -26,10 +30,14 @@ export default function App() {
         <Marquee />
         <Stats />
         <About />
-        <Skills />
+        <Problem />
+        <WhyMe />
         <Projects />
         <Process />
+        <Skills />
         <Team />
+        <Faq />
+        <Offer />
         <Contact />
       </main>
       <Footer />

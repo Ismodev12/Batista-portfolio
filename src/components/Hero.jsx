@@ -2,12 +2,6 @@ import { site } from "../data/site.js";
 import { coreSkills } from "../data/skills.js";
 import { Arrow, Icon, Reveal, Spark } from "./ui.jsx";
 
-const Star = () => (
-  <svg viewBox="0 0 24 24" className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" aria-hidden="true">
-    <path d="m12 2 3.1 6.6 7.1.9-5.2 5 1.3 7.1L12 18.2l-6.3 3.4L7 14.5l-5.2-5 7.1-.9z" />
-  </svg>
-);
-
 // Effet de profondeur : chaque calque se décale selon la position du curseur (--mx / --my, de -1 à 1).
 const layer = "transition-transform duration-500 ease-out will-change-transform";
 const depth = (px) => ({ transform: `translate3d(calc(var(--mx) * ${px}px), calc(var(--my) * ${px}px), 0)` });
@@ -104,11 +98,16 @@ export default function Hero() {
             </Reveal>
 
             <Reveal delay={2150} className="relative z-10 flex flex-col items-center text-center lg:items-end lg:self-center lg:pb-10 lg:text-right">
-              <div className="flex gap-1 text-accent [filter:drop-shadow(0_0_0_#090909)]" role="img" aria-label="Cinq étoiles">
-                <Star /><Star /><Star /><Star /><Star />
-              </div>
-              <p className="mt-5 whitespace-nowrap font-display text-4xl font-bold leading-none tracking-tight xl:text-5xl">15+ Interfaces</p>
-              <p className="mt-3 text-base text-moss-dim lg:text-lg">conçues</p>
+              {/* Les trois technologies principales, à la place d'une note non vérifiable */}
+              <ul className="flex gap-2" aria-label="Technologies principales">
+                {coreSkills.map((sk) => (
+                  <li key={sk.name} title={sk.name} className="grid h-11 w-11 place-items-center rounded-full bg-ink text-accent">
+                    <Icon src={sk.icon} className="h-5 w-5" /><span className="sr-only">{sk.name}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-5 whitespace-nowrap font-display text-4xl font-bold leading-none tracking-tight xl:text-5xl">Full-stack</p>
+              <p className="mt-3 text-base text-moss-dim lg:text-lg">React · Tailwind · Laravel</p>
             </Reveal>
           </div>
         </div>

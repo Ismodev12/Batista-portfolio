@@ -18,13 +18,13 @@ export const site = {
 
 export const navLinks = [
   { label: "À propos", href: "#about" },
-  { label: "Compétences", href: "#skills" },
   { label: "Projets", href: "#projects" },
+  { label: "Compétences", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const stats = [
-  { value: "03+", label: "Projets réalisés" },
+  { value: "04", label: "Projets réalisés" },
   { value: "03", label: "Technologies principales" },
   { value: "15+", label: "Interfaces conçues" },
   { value: "100%", label: "Passion du développement" },
@@ -38,8 +38,8 @@ export const aboutFacts = [
 ];
 
 export const process = [
-  { n: "01", title: "Découvrir", text: "Comprendre le problème." },
-  { n: "02", title: "Concevoir", text: "Construire une expérience claire." },
-  { n: "03", title: "Développer", text: "Transformer le design en produit." },
-  { n: "04", title: "Affiner", text: "Tester et améliorer chaque détail." },
+  { n: "01", title: "Découvrir", text: "Comprendre votre activité, vos objectifs et vos clients." },
+  { n: "02", title: "Concevoir", text: "Dessiner une expérience claire et la valider avec vous." },
+  { n: "03", title: "Développer", text: "Construire le site, avec des démos régulières." },
+  { n: "04", title: "Lancer", text: "Tester, mettre en ligne et vous former à la prise en main." },
 ];
