@@ -5,4 +5,5 @@ puis indiquez son nom de fichier dans src/data/team.js (champ "photo").
 Exemple : public/assets/images/team/awa.jpg  ->  photo: "/assets/images/team/awa.jpg"
 Tant qu'une photo manque, la carte affiche les initiales de la personne.
 
-Fichiers attendus actuellement : lisette.jpg, bhilal.jpg, ismael.jpg, elvire.jpg, eurydoxie.jpg
+Photos utilisées actuellement (détourées) : lisette-cut.webp, bhilal-cut.webp, ismael-cut.webp, elvire-cut.webp, eurydoxie-cut.webp
+Une photo .jpg classique fonctionne aussi pour une nouvelle personne.
